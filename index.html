@@ -3,62 +3,61 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Приглашение на мероприятие</title>
+  <title>Приглашение</title>
+
+  <!-- Open Graph превью -->
+  <meta property="og:title" content="Приглашение 🎉" />
+  <meta property="og:description" content="Пожалуйста, подтвердите своё присутствие" />
+  <meta property="og:image" content="https://aidyn228.github.io/invite-site/preview.jpg" />
+  <meta property="og:url" content="https://aidyn228.github.io/invite-site/" />
+  <meta property="og:type" content="website" />
+
   <style>
     body {
-      font-family: Arial, sans-serif;
-      background: #f5f7fa;
       margin: 0;
-      padding: 0;
+      font-family: Arial, sans-serif;
+      background: #f5f5f5;
       text-align: center;
-      color: #333;
     }
-    .container {
+    .image-container img {
+      width: 100%;
       max-width: 800px;
+      height: auto;
+      display: block;
       margin: auto;
-      padding: 20px;
+      border-radius: 12px;
     }
-    .card {
+    .form-container {
+      max-width: 800px;
+      margin: 20px auto;
       background: #fff;
-      padding: 25px;
-      border-radius: 15px;
+      padding: 20px;
+      border-radius: 12px;
       box-shadow: 0 6px 15px rgba(0,0,0,0.1);
-    }
-    h1 {
-      margin-top: 0;
-      color: #2d8fdd;
-    }
-    p {
-      line-height: 1.5;
-      margin-bottom: 20px;
     }
     iframe {
       width: 100%;
-      height: 650px; /* под форму */
+      height: 650px;
       border: none;
       border-radius: 10px;
     }
     @media (max-width: 600px) {
-      iframe {
-        height: 750px; /* больше места для мобайла */
-      }
+      iframe { height: 750px; }
     }
   </style>
 </head>
 <body>
-  <div class="container">
-    <div class="card">
-      <h1>Вы приглашены!</h1>
-      <p><b>Дата:</b> 25 сентября 2025 в 19:00<br>
-         <b>Место:</b> г. Алматы</p>
-      <p>Пожалуйста, подтвердите своё присутствие через форму ниже:</p>
+  <div class="image-container">
+    <!-- 🔹 Здесь твоя картинка приглашения -->
+    <img src="invite.jpg" alt="Приглашение">
+  </div>
 
-      <!-- ВСТАВЬ СЮДА свой src от Google Form -->
-     <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdwIB_9DgTpl05_LzBK6w-9sUYvEu7Z2MIa2_xD2VUcDoedgA/viewform?embedded=true" width="640" height="622" frameborder="0" marginheight="0" marginwidth="0">Загрузка…</iframe>
-        Загрузка…
-      </iframe>
-    </div>
+  <div class="form-container">
+    <h2>Подтверждение присутствия</h2>
+    <!-- Вставь сюда embed Google Forms -->
+    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdwIB_9DgTpl05_LzBK6w-9sUYvEu7Z2MIa2_xD2VUcDoedgA/viewform?embedded=true" width="640" height="622" frameborder="0" marginheight="0" marginwidth="0">Загрузка…</iframe>
   </div>
 </body>
-
 </html>
+
+
